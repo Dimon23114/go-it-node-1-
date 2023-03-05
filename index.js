@@ -7,7 +7,6 @@ program
   .description('Some conact list our friends')
   .version('1.0.0')
 program
-  .option('-m, --method <method>', 'Action to perform')
   .option("-a, --action <type>", "choose action")
   .option("-i, --id <type>", "user id")
   .option("-n, --name <type>", "user name")
