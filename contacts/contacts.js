@@ -8,10 +8,10 @@ const contactPath = path.resolve(__dirname, "..", "db", "contacts.JSON")
 
 
 /**
- * @param ListContact gived for us contact list;
- * @param getContactById we can find some contact by ID;
- * @param removeContact help us for delete some contact;
- * @param addContact help us for added a new contact;
+ * @param {function} ListContact(gived for us contact list;)   
+ * @param {function} getContactById(we can find some contact by ID;) 
+ * @param {function} removeContact(help us for delete some contact;)
+ * @param {function} addContact(help us for added a new contact;)
  */
 
 
