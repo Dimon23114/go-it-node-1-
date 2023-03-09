@@ -13,10 +13,11 @@ program
   .option('--email <type>', 'user email')
   .option('--phone <type>', 'user phone'); 
 program.parse(process.argv);
+
 const { method, id, name , email, phone } = program.opts();
 console.log(method, id, name , email, phone);
 
-(async ({ method, id, name, email, phone }) =>{
+(async () =>{
 
   if (method === 'list'){
     const result = await listContacts()
@@ -34,4 +35,5 @@ console.log(method, id, name , email, phone);
     const result = await addContact(name, email, phone)
     console.log(result);
   }
+
 })();
